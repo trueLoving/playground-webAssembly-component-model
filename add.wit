@@ -2,4 +2,7 @@ package example:component;
 
 world example {
   export add: func(x:s32,y:s32) ->s32;
+  // todo: how to combine with node native module
+  // export readfile: func(filename: s32) -> s32;
 }
+
