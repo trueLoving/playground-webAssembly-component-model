@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "scripts": {
+    "build:wasm": "jco componentize add.js --wit add.wit --world-name example --out add.wasm",
+    "transpile:wasm": "jco transpile add.wasm -o out-dir",
+    "bench": "node bench/bench.js"
+  },
+  "dependencies": {
+    "@bytecodealliance/componentize-js": "^0.8.3",
+    "@bytecodealliance/jco": "^1.2.4"
+  },
+  "devDependencies": {
+    "tinybench": "^2.8.0"
+  }
+}
